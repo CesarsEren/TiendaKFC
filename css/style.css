@@ -20,7 +20,7 @@ html {
   color: var(--color-text-nav);
 }
 body {
-  background: url("/img/texture.jpg");
+  background: url("../img/texture.jpg");
   margin: 0px;
   padding: 0px;
   font-family: "MyWebFont";
