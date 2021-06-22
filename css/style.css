@@ -221,6 +221,7 @@ main {
   justify-content: space-between;
 }
 .btn {
+  cursor: pointer;
   border-radius: 2px;
   background-color: white;
   padding-top: 13px;
