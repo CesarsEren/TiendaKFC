@@ -1,0 +1,328 @@
+/* [ XL Laptop] */
+@media (max-width: 1366px) {
+  /*@media (max-width: 1400px) {*/
+}
+/*[ LG TABLET HORIZONTAL]*/
+@media (max-width: 1024px) {
+  .seccion-productos .area-productos {
+    width: 100%;
+    display: inline-grid;
+    grid-gap: 1%;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 60px;
+  }
+  .navbar-menu-list {
+    overflow-x: auto;
+  }
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/*BIG  CELULAR LANDSCAPE */
+@media (max-width: 823px) and (min-width: 770px) {
+  .seccion-productos .area-productos {
+    width: 100%;
+    display: inline-grid;
+    grid-gap: 2%;
+    grid-template-columns: 48% 48%;
+    margin-bottom: 60px;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar-menu-list {
+    overflow-x: auto;
+  }
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    text-align: center;
+    margin: auto;
+  }
+}
+/*[ MD TABLET VERTICAL]*/
+@media (max-width: 768px) {
+  .seccion-productos .area-productos {
+    width: 100%;
+    display: inline-grid;
+    grid-gap: 1%;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 60px;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar-menu-list {
+    overflow-x: auto;
+  }
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    text-align: center;
+    margin: auto;
+  }
+}
+/*[ CELULAR LANDSCAPE]*/
+@media (max-width: 736px) {
+  .seccion-productos .area-productos {
+    width: 100%;
+    display: inline-grid;
+    grid-gap: 2%;
+    grid-template-columns: 48% 48%;
+    margin-bottom: 60px;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar-menu-list {
+    overflow-x: auto;
+  }
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    text-align: center;
+    margin: auto;
+  }
+}
+/* SMALL CELULAR LANDSCAPE */
+@media (max-width: 568px) {
+  .seccion-productos .area-productos {
+    width: 100%;
+    display: inline-grid;
+    grid-gap: 2%;
+    grid-template-columns: 100%;
+    margin-bottom: 60px;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar-menu-list {
+    overflow-x: auto;
+  }
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    text-align: center;
+    margin: auto;
+  }
+
+  .card .card-title {
+    margin-top: 10px;
+    color: var(--color-primary);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card .card-title h4 {
+    width: 100%;
+    color: var(--color-primary);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .card .card-title span {
+    color: var(--color-primary);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .card-options {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .btn {
+    border-radius: 2px;
+    background-color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .btn-personalizar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .btn-ordenar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: white;
+  }
+}
+/*[ CELULAR PORTRAIT ]*/
+@media (max-width: 480px) {
+  .seccion-productos .area-productos {
+    width: 100%;
+    display: inline-grid;
+    grid-gap: 2%;
+    grid-template-columns: 48% 48%;
+    margin-bottom: 60px;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar-menu-list {
+    overflow-x: auto;
+  }
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    text-align: center;
+    margin: auto;
+  }
+
+  .card .card-title {
+    margin-top: 10px;
+    color: var(--color-primary);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card .card-title h4 {
+    width: 100%;
+    color: var(--color-primary);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .card .card-title span {
+    color: var(--color-primary);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .card-options {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .btn {
+    border-radius: 2px;
+    background-color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .btn-personalizar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .btn-ordenar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: white;
+  }
+}
+
+/*[ SMALL CELULAR PORTRAIT ]*/
+@media (max-width: 360px) {
+  .seccion-productos .area-productos {
+    width: 100%;
+    display: inline-grid;
+    grid-gap: 2%;
+    grid-template-columns: 48% 48%;
+    margin-bottom: 160px;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar-menu-list {
+    overflow-x: auto;
+  }
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    text-align: center;
+    margin: auto;
+  }
+
+  .card .card-title {
+    margin-top: 10px;
+    color: var(--color-primary);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card .card-title h4 {
+    width: 100%;
+    color: var(--color-primary);
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .card .card-title span {
+    color: var(--color-primary);
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .card-options {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .btn {
+    border-radius: 2px;
+    background-color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .btn-personalizar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 2px solid black;
+  }
+
+  .btn-ordenar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  .navbar-secundario .navbar-menu-list .navbar-menu-item {
+    font-size: 10px;
+    text-align: center;
+  }
+  .navbar-terciario .navbar-menu-list .navbar-menu-item {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

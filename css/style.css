@@ -1,0 +1,268 @@
+@import url("reset.css");
+@import url("default.css");
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');*/
+@font-face {
+  font-family: "MyWebFont";
+  src: url("Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  --color-primary: #9b23ad;
+  --color-secondary: #9b23ad;
+  --color-text-nav: #000000;
+  --color-text-title: #212529;
+
+  --color-text-subnav: #ffffff;
+  color: var(--color-text-nav);
+}
+body {
+  background: url("/img/texture.jpg");
+  margin: 0px;
+  padding: 0px;
+  font-family: "MyWebFont";
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+}
+.navbar-principal {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  background-color: white;
+}
+.navbar-principal img {
+  width: 72px;
+  height: 66px;
+}
+
+.sticky-1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1032;
+}
+.sticky-2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  z-index: 1032;
+}
+
+.navbar-principal a {
+  font-family: "MyWebFont";
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.navbar-secundario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  background-color: var(--color-primary);
+}
+.navbar-secundario .navbar-menu-list {
+  display: flex;
+}
+
+.navbar-secundario .navbar-menu-list .navbar-menu-item {
+  text-decoration: none;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "MyWebFont";
+  font-size: 14px;
+  color: var(--color-text-subnav);
+  background-color: var(--color-primary);
+  border-right: 1px solid white;
+}
+.menu-item-right {
+  border-left: 1px solid white;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+}
+.navbar-secundario .navbar-menu-list .navbar-menu-item:active {
+  background-color: black;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.navbar-secundario .navbar-menu-list .navbar-menu-item:focus {
+  background-color: black;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.navbar-secundario .navbar-menu-list .active {
+  background-color: black;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.navbar-secundario img {
+}
+
+.navbar-terciario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: var(--color-text-subnav);
+  border-bottom: 3px solid #d4d4d4;
+}
+
+.navbar-terciario .navbar-menu-list {
+  display: flex;
+  padding-bottom: 2px;
+}
+.navbar-terciario .navbar-menu-list .navbar-menu-item {
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "MyWebFont";
+  font-size: 14px;
+  border-bottom: 5px solid white;
+}
+
+.navbar-terciario .navbar-menu-list .navbar-menu-item:focus {
+  border-bottom: 5px solid var(--color-primary);
+}
+
+.navbar-terciario .navbar-menu-list .navbar-menu-item:active {
+  border-bottom: 5px solid var(--color-primary);
+}
+.navbar-terciario .navbar-menu-list .active {
+  border-bottom: 5px solid var(--color-primary);
+}
+
+main {
+  padding: 15px;
+  background-color: white;
+  display: block;
+}
+.seccion-productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.seccion-productos .section-title {
+  font-size: 25px;
+  color: var(--color-text-title);
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.seccion-productos .area-productos {
+  width: 100%;
+  display: inline-grid;
+  grid-gap: 2%;
+  grid-template-columns: 23% 23% 23% 23%;
+  margin-bottom: 60px;
+}
+
+.seccion-productos .area-productos .card {
+  -webkit-box-shadow: 1px 1px 1px 1px #dbdbdb;
+  box-shadow: 1px 1px 1px 1px #dbdbdb;
+  border-radius: 5px;
+  padding: 5px;
+}
+.card .card-title {
+  margin-top: 10px;
+  color: var(--color-primary);
+  display: flex;
+}
+.card .card-title h4 {
+  width: 70%;
+  color: var(--color-primary);
+  font-size: 15px;
+}
+
+.card .card-title span {
+  color: var(--color-primary);
+  width: 30%;
+  text-align: right;
+}
+.card-options {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  border-radius: 2px;
+  background-color: white;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.btn-personalizar {
+  width: 48%;
+  border: 2px solid black;
+}
+
+.btn-ordenar {
+  width: 48%;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: white;
+}
+
+footer {
+  font-family: "Oswald";
+  font-weight: 100;
+  font-size: 14px;
+  background-color: var(--color-primary);
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon{
+  color: white;
+}
