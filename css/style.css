@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("default.css");
+@import url("color.css");
 /*@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');*/
 @font-face {
   font-family: "MyWebFont";
@@ -10,13 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  --color-primary: #9b23ad;
-  --color-secondary: #9b23ad;
-  --color-text-nav: #000000;
-  --color-text-title: #212529;
-
-  --color-text-subnav: #ffffff;
+* { 
   color: var(--color-text-nav);
 }
 body {
@@ -63,7 +58,7 @@ body {
   z-index: 1032;
 }
 
-.navbar-principal a {
+.navbar-principal .navbar-element {
   font-family: "MyWebFont";
   text-decoration: none;
   font-weight: bold;
@@ -98,6 +93,7 @@ body {
   border-right: 1px solid white;
 }
 .menu-item-right {
+  
   border-left: 1px solid white;
   padding-right: 5px;
   padding-left: 5px;
@@ -126,11 +122,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   background-color: var(--color-text-subnav);
-  border-bottom: 3px solid #d4d4d4;
+  border-bottom: 3px solid var(--color-assets) ;
 }
 
 .navbar-terciario .navbar-menu-list {
@@ -264,6 +260,7 @@ footer p a {
   color: black;
 }
 
-.icon{
+.c-white{
   color: white;
 }
+

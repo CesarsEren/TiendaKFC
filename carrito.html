@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesars Pinedo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <link rel="stylesheet" href="css/style.mq.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container">
+
+    <nav class="navbar navbar-principal">
+        <img src="img/logo.png" alt="">
+        <span class="navbar-element"> 941289111</span>
+    </nav>
+    <nav class="navbar navbar-secundario sticky-1">
+        <div class="navbar-menu-list">
+            <a class="navbar-menu-item " href="index.html">MENU</a>
+            <a class="navbar-menu-item " href="promos.html">PROMOS</a>
+        </div>
+
+        <div class="navbar-menu-list">
+
+            <a class="navbar-menu-item active menu-item-right " href="carrito.html">
+                <i class="c-white fa fa-shopping-cart fa-lg"></i>
+                <span class="c-white">S/0.00</span>
+                <!--img src="img/icons8_halal_food_24px.png" alt="" height="60px"-->
+            </a>
+        </div>
+    </nav>
+    <main>
+        <h3 class="titulo-carrito">Mi Carrito</h3>
+        <section class="seccion-carrito ">
+            <article class="card card-carrito expandable" id="s" style="background:#e6e6e6; height: 20px;">
+                <div class="card-header">
+                    <h2>MEGA RECARGADO - 10 PIEZAS</h2>
+                    <i class="icon" onclick="toggleHeight(this, 100); return false">X<i>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <ul>
+                        <li>1x9 Piezas de Pollo</li>
+                        <li>5x Receta Secreta</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card card-carrito">
+                <div class="card-header">
+                    <h2>MEGA RECARGADO - 10 PIEZAS</h2>
+                    <span>S/ 34.00</span>
+                </div>
+                <hr>
+                <div class="card-body">
+                </div>
+            </article>
+        </section>
+
+        <section class="seccion-carrito-detalle">
+
+        </section>
+        <section class="seccion-carrito seccion-accion">
+            <div class="card d-flex">
+                <button class="m-auto btn btn-ordenar btn-pedido">ORDENAR
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p><a href="cesaspinedo.com">Cesar's Pinedo</a> 2021 © All Rights Reserved</p>
+            <p>Copiado de <a href="kfc.com.pe">Kfc.com.pe</a> </p>
+        </div>
+    </footer>
+    <script>
+        function locationHashChanged() {
+            const hash = location.hash;
+            const navbarterciario = document.getElementsByClassName("navbar-terciario");
+            const navbar = navbarterciario[0];
+            const listaLinks = navbar.getElementsByClassName("navbar-menu-item");
+            for (x = 0; x < listaLinks.length; x++) {
+                listaLinks[x].classList.remove("active");
+                if (listaLinks[x].href.split("#")[1] == hash.substr(1)) {
+                    listaLinks[x].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener('hashchange', locationHashChanged);
+        function toggleHeight(e, maxHeight) {
+            e = document.getElementById("s"); // e = the gray div
+
+            if (e.style.height != '20px') {
+                e.style.height = '20px'; // height of one line: 20px
+            } else {
+                e.style.height = maxHeight + 'px';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

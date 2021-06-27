@@ -1,0 +1,62 @@
+@import url("color.css");
+.titulo-carrito{
+    font-size: 1.6rem;
+}
+main{
+    height:100vh;
+}
+.card{
+    width: 60%;  
+}
+.card-carrito{
+    padding: 5px;
+    border: 0.6px solid var(--color-assets);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.seccion-carrito{
+    width: 100%;
+    margin-top: 20px;
+}
+.seccion-accion{
+    width: 100%;
+    display: flex;
+    
+}
+.d-flex{
+    display: flex;
+}
+.m-auto{
+margin:auto;
+}
+
+.card-header{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+
+} 
+
+.card-body{
+    padding: 10px;
+} 
+.btn-pedido{
+    font-size: 18px;
+    float: right;
+}
+
+.expandable {
+    padding-top: 10px;
+    /* overflow set to hidden to hide the expanded text */
+    overflow: hidden;
+    /* all style changes will ease-in-out for 1s */
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s;
+}
